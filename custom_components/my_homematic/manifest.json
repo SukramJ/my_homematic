@@ -1,0 +1,15 @@
+{
+  "domain": "my_homematic",
+  "name": "My Homematic",
+  "config_flow": true,
+  "documentation": "https://github.com/SukramJ/my_homematic",
+  "issue_tracker": "https://github.com/SukramJ/my_homematic/issues",
+  "requirements": [],
+  "ssdp": [],
+  "zeroconf": [],
+  "homekit": {},
+  "dependencies": ["hahm"],
+  "codeowners": ["@SukramJ"],
+  "iot_class": "local_pull",
+  "version": "0.0.1"
+}
