@@ -3,4 +3,6 @@
 ### This project is still in early development!
 
 Provides the following:
-- Sensor 
+- sensor
+- binary_sensor
+- number

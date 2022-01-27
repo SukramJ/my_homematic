@@ -26,6 +26,7 @@ CONF_INTERFACE_ID = "interface_id"
 CONF_PARAMETER = "parameter"
 CONF_PARAMSET_KEY = "paramset_key"
 CONF_STATE_CLASS = "state_class"
+CONF_MULTIPLICATOR = "multiplicator"
 DEFAULT_PARAMSET_KEY = "VALUES"
 
 
@@ -47,6 +48,7 @@ class HaHomematicGenericPullEntity:
             self._attr_device_class = device_class
         if state_class := config.get(CONF_STATE_CLASS):
             self._attr_state_class = state_class
+        self._multiplicator = config.get(CONF_MULTIPLICATOR, 1)
         self._client: hm_client.Client | None = None
 
     async def _get_data(self) -> Any:
